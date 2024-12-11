@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Demo 4</title>
+    <script>
+        function elementInsert() {
+            let newElement = document.createElement("div");
+            newElement.innerHTML = "<p>Hello There .....</p>";
+            let whereToInsert = document.getElementById("first1");
+            whereToInsert.append(newElement)
+        }
+    </script>
+</head>
+
+<body>
+    <h2 id="first1">Inserting Element</h2>
+    <button onclick="elementInsert()">Insert Element</button>
+</body>
+
+</html>
